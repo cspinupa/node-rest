@@ -1,0 +1,22 @@
+{
+  "name": "node-rest",
+  "version": "1.0.0",
+  "description": "Node REST API ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cspinupa/node-rest.git"
+  },
+  "keywords": [
+    "cspinupa-node-rest"
+  ],
+  "author": "Chetan Sharma Pinupa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cspinupa/node-rest/issues"
+  },
+  "homepage": "https://github.com/cspinupa/node-rest#readme"
+}
