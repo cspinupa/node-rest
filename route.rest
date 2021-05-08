@@ -1,0 +1,24 @@
+
+GET http://localhost:3300/subscribers
+
+###
+GET  http://localhost:3300/subscribers/609427343d34367c7831c983
+
+
+###
+POST http://localhost:3300/subscribers
+Content-Type: application/json
+
+{
+    "name": "Chetan Sharma",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+POST http://localhost:3300/subscribers
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Web Dev Simplified"
+}

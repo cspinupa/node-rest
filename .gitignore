@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules
+.vscode
+.env
+
+### Node ###
+# Logs
+logs
+*.log
+*.log.xml
+npm-debug.log*
+package-lock.json
+yarn.lock
+
+# Optional npm cache directory
+.npm
+
+### Add OSX DS_Store
+.DS_Store
+
+### IDE
+.idea
+
+### Ignore Build
+build
+
+### Ignore testing reports
+#reports
+#performance-report.html
+#tests/integ/report
+
+### Ignore ChromeDriver
+chromedriver
