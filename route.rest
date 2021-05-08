@@ -45,6 +45,8 @@ DELETE  http://localhost:3300/subscribers/6096648143157f3c6aec3abb
 
 // ****************   books API  *************
 
+### GET ALL ####
+GET http://localhost:3300/books
 
 // ****************   users API  *************
 ### GET ALL ####

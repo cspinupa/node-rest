@@ -17,6 +17,10 @@ openAPI docs:
         - TODO: defining post, patch open api spec
         - TODO: defininng schema, using ref
 
+Testing:
+    - Run the server and use postman/other tools
+    - We have route.rest which can be used in VSCode with RESTClient plugin (quick way of testing)
+
 Reference:
 
 https://www.youtube.com/watch?v=fgTGADljAeg
