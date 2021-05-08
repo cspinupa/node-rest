@@ -3,6 +3,16 @@ const router = express.Router()
 const Subscriber = require('../models/subscriber')
 
 //Getting all
+/**
+ * @swagger
+ * /subscribers:
+ *  get:
+ *      description: Get all subscribers
+ *      responses: 
+ *          200: 
+ *              description: success
+ * 
+ */
 router.get('/', async (req, res) => {
     try {
         const subscribers = await Subscriber.find()
@@ -13,12 +23,14 @@ router.get('/', async (req, res) => {
 })
 
 //Getting one
+/* TODO: open API to be added here */
 router.get('/:id', getSubscriber, (req, res) => {
     res.send(res.subscriber)
 })
 
 
 //Creating one
+/* TODO: open API to be added here */
 router.post('/', async (req, res) => {
     const subscriber = new Subscriber({
         name: req.body.name,
@@ -34,6 +46,7 @@ router.post('/', async (req, res) => {
 
 
 //Updating one
+/* TODO: open API to be added here */
 router.patch('/:id', getSubscriber, async (req, res) => {
     if(req.body.name != null) {
         res.subscriber.name = req.body.name
@@ -51,6 +64,7 @@ router.patch('/:id', getSubscriber, async (req, res) => {
 
 
 //Deleting one
+/* TODO: open API to be added here */
 router.delete('/:id',getSubscriber, async (req, res) => {
     try {
         await res.subscriber.remove()

@@ -1,20 +1,34 @@
+// ****************   Subscriber API  *************
 
 ### GET ALL ####
 GET http://localhost:3300/subscribers
-
 ### GET ONE ####
 GET  http://localhost:3300/subscribers/609665f9a540393d1aaffd8d
-
-
 ### POST - Valid ####
 POST http://localhost:3300/subscribers
 Content-Type: application/json
 
 {
-    "name": "Sharma",
-    "subscribedToChannel": "Traversy Media"
+    "name": "India",
+    "subscribedToChannel": "Great India!"
 }
-/*
+### POST - Invalid ####
+POST http://localhost:3300/subscribers
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Web Dev Simplified"
+}
+### PATCH ONE ####
+PATCH  http://localhost:3300/subscribers/609665f9a540393d1aaffd8d
+Content-Type: application/json
+
+{
+    "name" : "Sharma Chetan"
+}
+### DELETE ONE ####
+DELETE  http://localhost:3300/subscribers/6096648143157f3c6aec3abb
+##### DATA ####
 {
     "name": "Chetan",
     "subscribedToChannel": "Web Dev simplifid"
@@ -27,25 +41,22 @@ Content-Type: application/json
     "name": "India",
     "subscribedToChannel": "Great India!"
 }
-*/
 
-### POST - Invalid ####
 
-POST http://localhost:3300/subscribers
+// ****************   books API  *************
+
+
+// ****************   users API  *************
+### GET ALL ####
+GET http://localhost:3300/users
+### GET ONE ####
+GET  http://localhost:3300/users/609665f9a540393d1aaffd8d
+### POST - Valid ####
+POST http://localhost:3300/users
 Content-Type: application/json
 
 {
-    "subscribedToChannel": "Web Dev Simplified"
+    "name": "chetan",
+    "email": "chetansharma5@yahoo.com",
+    "password": "iLoveIndia!"
 }
-
-### PATCH ONE ####
-PATCH  http://localhost:3300/subscribers/609665f9a540393d1aaffd8d
-Content-Type: application/json
-
-{
-    "name" : "Sharma Chetan"
-}
-
-
-### DELETE ONE ####
-DELETE  http://localhost:3300/subscribers/6096648143157f3c6aec3abb
